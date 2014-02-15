@@ -3,9 +3,7 @@ HackerGenius::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get 'auth/:provider/callback', to: 'sessions#create', as: "signin"
-  get 'auth/failure', to: redirect('/')
-  get 'signout', to: 'sessions#destroy', as: 'signout'
+  
   
   root 'tracks#index'
   resources :tracks do
@@ -13,4 +11,7 @@ HackerGenius::Application.routes.draw do
   end
   
   resources :new
+  
+  get '/auth/facebook/callback' => 'session#create'
+  get '/auth/logout' => 'session#destroy'
 end
