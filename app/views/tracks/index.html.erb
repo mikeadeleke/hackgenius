@@ -1,1 +1,8 @@
 <h1>All Tracks</h1>
+
+<div class="">
+<% @tracks.each do |track| %>
+  <h3><%= track.title %></h3>
+  <p><%= track.content %></p>
+<% end %>
+</div>
