@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140215142218) do
+ActiveRecord::Schema.define(version: 20140215171611) do
 
   create_table "annotations", force: true do |t|
     t.text     "body"
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(version: 20140215142218) do
     t.text     "verse1"
     t.text     "verse2"
     t.text     "verse3"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
