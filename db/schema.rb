@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140215051012) do
+ActiveRecord::Schema.define(version: 20140215082642) do
 
   create_table "tracks", force: true do |t|
     t.string   "title"
@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 20140215051012) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "verse1"
+    t.text     "verse2"
+    t.text     "verse3"
   end
 
 end

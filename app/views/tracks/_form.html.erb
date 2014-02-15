@@ -1,9 +1,18 @@
 <%= form_for @track do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title, placeholder: "Ex. Friday - Rebcecca Black" %>
 
-  <%= f.label :content %>
-  <%= f.text_area :content %><br>
+  <%= f.label :verse1 %>
+  <%= f.text_area :content, placeholder: "You know the song. Make it better." %><br>
+
+  <%= f.label :chorus %>
+  <%= f.text_area :verse1, placeholder: "Something catchy you know?" %><br>
+
+  <%= f.label :verse2 %>
+  <%= f.text_area :verse2, placeholder: "If you have the goods" %><br>
+
+  <%= f.label :verse3 %>
+  <%= f.text_area :verse3, placeholder: "Ambitious" %><br>
 
   <%= f.submit %>
 <% end %>

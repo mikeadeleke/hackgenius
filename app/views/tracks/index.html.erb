@@ -1,8 +1,11 @@
 <h1>All Tracks</h1>
 
-<div class="">
+<div class="track">
 <% @tracks.each do |track| %>
   <h3><%= track.title %></h3>
   <p><%= track.content %></p>
+  <p><%= track.verse1 %></p>
+  <p><%= track.verse2 %></p>
+  <p><%= track.verse3 %></p>
 <% end %>
 </div>
