@@ -1,4 +1,307 @@
-.navbar-inner {
-  background-color: black; /* place your solid color here */
+/*CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*End of CSS reset */
+
+body {
+  background-color: black;
+}
+
+/* nav */ 
+
+.nav {
+	background-color: #1A1A1A;
+	padding: 5px;
+  height: 50px;
+  border-bottom: 2px solid yellow;
+  margin-top: 15px;
+}
+
+.nav li, .nav li button {
+	list-style-type: none;
+	display: inline;
+	font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 30px 0 0;
   color: yellow;
 }
+
+.nav li a {
+	color: yellow;
+	text-decoration: none;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+#logo, #submit {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#submit {
+  position: relative;
+  top: 5px;
+  left: 300px;
+}
+
+/* end of nav */ 
+
+/* track */ 
+.track {
+  margin-left: 70px;
+  border: 1px solid gray;
+  width: 600px;
+  color: yellow;
+  line-height: 1.5em;
+  padding: 20px;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+  margin-bottom: 50px;
+}
+
+.track a, .track h1 {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.track a:hover {
+  text-decoration: underline;
+}
+
+.track p {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.track input {
+  height: 60px;
+  width: 450px;
+  color: yellow;
+  font-size: 20px;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
+.track textarea {
+  height: 220px;
+  width: 450px;
+  color: yellow;
+  font-size: 20px;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
+.track input {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
+.track2 {
+  margin-left: 70px;
+  border: 1px solid gray;
+  width: 600px;
+  color: yellow;
+  line-height: 1.5em;
+  padding: 20px;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+  margin-bottom: 50px;
+}
+
+.track2 a, .track2 h1 {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.track2 a:hover {
+  text-decoration: underline;
+}
+
+.track2 p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.track2 p:hover {
+  color: black;
+  background-color: yellow;
+}
+
+/* end of track */ 
+
+/* sidebar */ 
+.sidebar {
+  width: 380px;
+  color: yellow;
+  border: 1px solid gray;
+  line-height: 1.5em;
+  padding: 20px;
+  position: relative;
+  bottom: 2360px;
+  left: 800px;
+  font-size: 20px;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
+.sidebar h2 {
+  font-size: 38px;
+  padding: 20px 0;
+}
+
+.sidebar li {
+  text-decoration: inherit;
+  padding: 5px 0;
+}
+
+.sidebar2 {
+  width: 380px;
+  color: yellow;
+  border: 1px solid gray;
+  line-height: 1.5em;
+  padding: 20px;
+  position: relative;
+  bottom: 753px;
+  left: 800px;
+  font-size: 20px;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
+.sidebar2 h2 {
+  font-size: 38px;
+  padding: 20px 0;
+  line-height: 1.2em;
+}
+
+.sidebar2 li {
+  text-decoration: inherit;
+  padding: 5px 0;
+}
+
+/* end of sidebar */ 
+
+
+
+/* footer */ 
+.footer {
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background-color: lightgray;
+	 padding-bottom: 30px;
+	padding-top: 10px;
+ }
+
+#pull-left img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#pull-left {
+  margin-left: 50px;
+}
+
+#pull-left li {
+  display: inline;
+}
+
+#pull-right li {
+  font-size: 13px;
+  font-family: Lucida Grande;
+  position: relative;
+  top: -30px;
+	vertical-align: center;
+}
+
+#pull-right a {
+  color: #025488;
+}
+
+#pull-right img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  top: 25px;
+	margin-left: -5px;
+}
+
+#pull-right {
+  margin-right: 50px;
+}
+
+#pull-left {
+  float: left;
+}
+
+#pull-right {
+  float: right;
+}
+
+
+/* end of footer */

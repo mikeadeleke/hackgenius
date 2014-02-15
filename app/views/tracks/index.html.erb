@@ -2,10 +2,22 @@
 
 <div class="track">
 <% @tracks.each do |track| %>
-  <h3><%= track.title %></h3>
+  <h3><%= link_to track.title, track_path(track) %></h3>
   <p><%= track.content %></p>
   <p><%= track.verse1 %></p>
   <p><%= track.verse2 %></p>
   <p><%= track.verse3 %></p>
 <% end %>
+</div>
+
+<div class="sidebar">
+  <h2>What is Hack Genius?</h2>
+  <ol>
+    <li>1. Take a favorite song</li>
+    <li>2. Make a parody for hackers, the startup crowd, VCs, or the the technology crew at large.</li>
+    <li>3. Invite friends to annotate it to see if they got your jokes.</li>
+    <li>4. If more than 10 people annotate your work, you get that shit verified.</li>
+    <li>5. Pause</li><br>
+  </ol>
+  <iframe width="360" height="315" src="//www.youtube.com/embed/okueA9dFcnc" frameborder="0" allowfullscreen></iframe>
 </div>
