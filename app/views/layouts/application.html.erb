@@ -13,7 +13,7 @@
       <nav class="nav">
         <ul>
           <li><%= link_to "HackGenius", root_path, id:"logo" %></li>
-          <li><a href="">New Tracks</a></li>
+          <li><%= link_to "New Tracks", new_index_path %></li>
           <li><a href="">New Faces</a></li>
           <li><a href="">New Annotations</a></li>
           <li><a href=""><%= link_to "Drop Some Mad Shit" , new_track_path, id:"submit" %></a></li>
@@ -21,17 +21,6 @@
       </nav>
       <%= yield %>
     </body>
-  <footer class="footer">
-    <ul id="pull-left">
-      <li><a href="http://github.com/mikeadeleke"><img src="../assets/github.jpeg" alt="Github"></a></li> 
-      <li><a href="https://twitter.com/mikeadeleke"><img src="../assets/twitter.png" alt="Twitter"></a></li> 
-      <li><a href="http://linkedin.com/in/mikeadeleke"><img src="../assets/linkedin-1.jpeg" alt="LinkedIn"></a></li> 
-      <li><a href="http://blog.mikeadeleke.com"><img src="../assets/blog-resize.png" alt="Blog"></a></li> 
-    </ul>
-    <ul id="pull-right">
-      <li>Created by <a href="">Mike Adeleke</a> Founder at  <a href=""><img src="../assets/domiapp.png" alt="Domi"></a></li>
-    </ul>
-  </footer>
 
   </body>
 </html>

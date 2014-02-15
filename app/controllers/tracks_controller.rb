@@ -1,6 +1,6 @@
 class TracksController < ApplicationController
   def index
-    @tracks = Track.all
+    @tracks = Track.order(updated_at: :asc).limit(25)
   end
   
   def show

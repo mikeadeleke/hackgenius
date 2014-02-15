@@ -59,10 +59,9 @@ body {
 
 .nav {
 	background-color: #1A1A1A;
-	padding: 5px;
-  height: 50px;
+	padding: 20px 5px;
+  height: 40px;
   border-bottom: 2px solid yellow;
-  margin-top: 15px;
 }
 
 .nav li, .nav li button {
@@ -102,15 +101,17 @@ body {
 
 /* track */ 
 .track {
-  margin-left: 70px;
   border: 1px solid gray;
   width: 600px;
+  height: 100%;
   color: yellow;
   line-height: 1.5em;
-  padding: 20px;
   background-color: #1A1A1A;
   font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-  margin-bottom: 50px;
+  position: relative;
+  top: 20px;
+  left: 100px;
+  padding: 10px;
 }
 
 .track a, .track h1 {
@@ -156,15 +157,16 @@ body {
 }
 
 .track2 {
-  margin-left: 70px;
   border: 1px solid gray;
   width: 600px;
   color: yellow;
   line-height: 1.5em;
-  padding: 20px;
+  padding: 5px 10px;
   background-color: #1A1A1A;
   font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-  margin-bottom: 50px;
+  position: relative;
+  top: 20px;
+  left: 100px;
 }
 
 .track2 a, .track2 h1 {
@@ -199,7 +201,7 @@ body {
   line-height: 1.5em;
   padding: 20px;
   position: relative;
-  bottom: 2360px;
+  top: -1550px;
   left: 800px;
   font-size: 20px;
   background-color: #1A1A1A;
@@ -223,7 +225,7 @@ body {
   line-height: 1.5em;
   padding: 20px;
   position: relative;
-  bottom: 753px;
+  bottom: 2270px;
   left: 800px;
   font-size: 20px;
   background-color: #1A1A1A;
@@ -239,6 +241,20 @@ body {
 .sidebar2 li {
   text-decoration: inherit;
   padding: 5px 0;
+}
+
+.sidebar3 {
+  width: 380px;
+  color: yellow;
+  border: 1px solid gray;
+  line-height: 1.5em;
+  padding: 20px;
+  position: relative;
+  bottom: 650px;
+  left: 800px;
+  font-size: 20px;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 }
 
 /* end of sidebar */ 
