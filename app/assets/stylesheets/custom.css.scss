@@ -191,6 +191,36 @@ body {
   background-color: yellow;
 }
 
+.annotations {
+  color: yellow;
+  background-color: #1A1A1A;
+  border-top: 3px solid gray;
+  padding: 20px 0;
+}
+
+.annotations li {
+  font-size: 20px;
+}
+
+.annotations textarea {
+  height: 100px;
+  width: 400px;
+  color: yellow;
+  background-color: #1A1A1A;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+  border: 3px solid lightgray;
+  font-size: 16px;
+}
+
+.annotations input {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+}
+
 /* end of track */ 
 
 /* sidebar */ 

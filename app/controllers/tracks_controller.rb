@@ -5,6 +5,7 @@ class TracksController < ApplicationController
   
   def show
     @track = Track.find(params[:id])
+    @annotation = Annotation.new
   end
   
   def new
@@ -16,7 +17,7 @@ class TracksController < ApplicationController
     if @track.save
       redirect_to @track
     else
-      render :new
+      render :new, notice: "Your track was not saved. Are you sure it was long enough?"
     end
   end
   

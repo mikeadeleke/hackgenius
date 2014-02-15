@@ -1,0 +1,4 @@
+<div class="track">
+<% @annotations.each do |annotation| %>
+  <h3><%= link_to annotation.body, track_annotation(annotation) %></h3>
+<% end %>
