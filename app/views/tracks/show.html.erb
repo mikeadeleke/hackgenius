@@ -7,9 +7,9 @@
   <div class="annotations">
     <ul>
       <% @track.annotations.each do |annotation| %>
-      <li><%= annotation.body %></li><br>  
-      <%= link_to "Edit", edit_track_annotation_path(:track_id => @track.id, :id => annotation.id) %> 
-      <%= link_to "Delete", track_annotation_path(:track_id => @track.id, :id => annotation.id), :method => :delete %>
+        <li><%= annotation.body %></li><br>  
+        <%= link_to "Edit", edit_track_annotation_path(:track_id => @track.id, :id => annotation.id) %> 
+        <%= link_to "Delete", track_annotation_path(:track_id => @track.id, :id => annotation.id), :method => :delete %>
       <% end %>
     </ul>
     <br><%= render "annotations/form" %>
@@ -18,5 +18,5 @@
 
 <div class="sidebar3">
   <h2>We got you a beat</h2>
-  Have an API call to pull this song from YouTube
+  <p><%= @track.url %></p>
 </div>
