@@ -16,11 +16,13 @@
           <% if current_user %>
             <li><%= link_to "HackGenius", root_path, id:"logo" %></li>
             <li><%= link_to "New Tracks", new_index_path %></li>
-            <li><a href="">New Faces</a></li>
             <li><%= link_to 'Logout','/auth/logout' %></li>
             <li><a href=""><%= link_to "Make One" , new_track_path, id:"submit" %></a></li>
           <% else %>
-            <li><%= link_to 'login with facebook','/auth/facebook' %></li>
+            <li><%= link_to "HackGenius", root_path, id:"logo" %></li>
+            <li><%= link_to "New Tracks", new_index_path %></li>
+            <li><%= link_to 'Login with Facebook','/auth/facebook' %></li>
+            <li><a href=""><%= link_to "Make One" , '/auth/facebook', id:"submit" %></a></li>
           <% end %>
           </ul>
         </nav>
