@@ -1,5 +1,7 @@
-<%= form_for [@track, @annotation] do |f| %>
+<div>
+  <%= form_for [@track, @annotation] do |f| %>
   <%= f.label :annotate %><br>
   <%= f.text_area :body, placeholder: "Ex. In the first verse, he was taling about his..." %><br></br>
   <%= f.submit %>
 <% end %>
+</div>

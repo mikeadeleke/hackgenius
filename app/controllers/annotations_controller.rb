@@ -14,7 +14,7 @@ class AnnotationsController < ApplicationController
 
   def edit
     @track = Track.find(params[:track_id])
-    @annotation = @track.annoations.find(params[:id])
+    @annotation = @track.annotations.find(params[:id])
    end 
 
   def update

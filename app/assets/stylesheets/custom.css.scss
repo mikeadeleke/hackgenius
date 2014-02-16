@@ -209,17 +209,26 @@ body {
   font-size: 20px;
 }
 
-.annotations textarea {
-  height: 100px;
-  width: 400px;
+.annotations-edit {
   color: yellow;
   background-color: #1A1A1A;
-  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
-  border: 3px solid lightgray;
-  font-size: 16px;
+  border: 1px solid gray;
+  width: 300px;
+  height: 250px;
+  margin: 30px;
 }
 
-.annotations input {
+.annotations-edit input, .annotations-edit p {
+  color: yellow;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "DinCondensed","Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
+  width: 100px;
+}
+
+
+.annotations-edit textarea {
   color: black;
   background-color: yellow;
   padding: 10px;
