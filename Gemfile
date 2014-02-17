@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'omniauth-facebook'
 
+
 group :test, :development do
   gem 'sqlite3'
 end
